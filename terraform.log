@@ -1,0 +1,2886 @@
+2016/04/21 15:25:11 [INFO] Terraform version: 0.6.14  c7e5b24531e73aae1eec2f7530d968ac8c69804c
+2016/04/21 15:25:11 [DEBUG] Detected home directory from env var: /Users/adron
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: atlas = /usr/local/terraform_0_6_14/terraform-provider-atlas
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: aws = /usr/local/terraform_0_6_14/terraform-provider-aws
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: azure = /usr/local/terraform_0_6_14/terraform-provider-azure
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: azurerm = /usr/local/terraform_0_6_14/terraform-provider-azurerm
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: chef = /usr/local/terraform_0_6_14/terraform-provider-chef
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: clc = /usr/local/terraform_0_6_14/terraform-provider-clc
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: cloudflare = /usr/local/terraform_0_6_14/terraform-provider-cloudflare
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: cloudstack = /usr/local/terraform_0_6_14/terraform-provider-cloudstack
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: consul = /usr/local/terraform_0_6_14/terraform-provider-consul
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: datadog = /usr/local/terraform_0_6_14/terraform-provider-datadog
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: digitalocean = /usr/local/terraform_0_6_14/terraform-provider-digitalocean
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: dme = /usr/local/terraform_0_6_14/terraform-provider-dme
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: dnsimple = /usr/local/terraform_0_6_14/terraform-provider-dnsimple
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: docker = /usr/local/terraform_0_6_14/terraform-provider-docker
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: dyn = /usr/local/terraform_0_6_14/terraform-provider-dyn
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: github = /usr/local/terraform_0_6_14/terraform-provider-github
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: google = /usr/local/terraform_0_6_14/terraform-provider-google
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: heroku = /usr/local/terraform_0_6_14/terraform-provider-heroku
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: influxdb = /usr/local/terraform_0_6_14/terraform-provider-influxdb
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: mailgun = /usr/local/terraform_0_6_14/terraform-provider-mailgun
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: mysql = /usr/local/terraform_0_6_14/terraform-provider-mysql
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: null = /usr/local/terraform_0_6_14/terraform-provider-null
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: openstack = /usr/local/terraform_0_6_14/terraform-provider-openstack
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: packet = /usr/local/terraform_0_6_14/terraform-provider-packet
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: postgresql = /usr/local/terraform_0_6_14/terraform-provider-postgresql
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: powerdns = /usr/local/terraform_0_6_14/terraform-provider-powerdns
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: rundeck = /usr/local/terraform_0_6_14/terraform-provider-rundeck
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: statuscake = /usr/local/terraform_0_6_14/terraform-provider-statuscake
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: template = /usr/local/terraform_0_6_14/terraform-provider-template
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: terraform = /usr/local/terraform_0_6_14/terraform-provider-terraform
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: tls = /usr/local/terraform_0_6_14/terraform-provider-tls
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: triton = /usr/local/terraform_0_6_14/terraform-provider-triton
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: ultradns = /usr/local/terraform_0_6_14/terraform-provider-ultradns
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: vcd = /usr/local/terraform_0_6_14/terraform-provider-vcd
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: vsphere = /usr/local/terraform_0_6_14/terraform-provider-vsphere
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: chef = /usr/local/terraform_0_6_14/terraform-provisioner-chef
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: file = /usr/local/terraform_0_6_14/terraform-provisioner-file
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: local-exec = /usr/local/terraform_0_6_14/terraform-provisioner-local-exec
+2016/04/21 15:25:11 [DEBUG] Discovered plugin: remote-exec = /usr/local/terraform_0_6_14/terraform-provisioner-remote-exec
+2016/04/21 15:25:11 [DEBUG] Detected home directory from env var: /Users/adron
+2016/04/21 15:25:11 [DEBUG] Attempting to open CLI config file: /Users/adron/.terraformrc
+2016/04/21 15:25:11 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2016/04/21 15:25:11 [DEBUG] Detected home directory from env var: /Users/adron
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.OrphanTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.AddOutputOrphanTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.MissingProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.VertexTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.FlattenTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ProxyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.PruneProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.DestroyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy tainted)
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_record.lenadron_ns (destroy tainted)
+  provider.aws
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy tainted)
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy tainted)
+  aws_route53_record.lenadron_ns (destroy tainted)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.PruneDestroyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.PruneNoopTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.CloseProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.CloseProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [DEBUG] Starting graph walk: walkInput
+2016/04/21 15:25:11 [DEBUG] vertex root.var.aws_secret_key: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.var.aws_secret_key: evaluating
+2016/04/21 15:25:11 [TRACE] [walkInput] Entering eval tree: var.aws_secret_key
+2016/04/21 15:25:11 [DEBUG] vertex root.var.default_region: walking
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] vertex root.var.default_region: evaluating
+2016/04/21 15:25:11 [TRACE] [walkInput] Exiting eval tree: var.aws_secret_key
+2016/04/21 15:25:11 [TRACE] [walkInput] Entering eval tree: var.default_region
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalNoop
+2016/04/21 15:25:11 [TRACE] [walkInput] Exiting eval tree: var.default_region
+2016/04/21 15:25:11 [DEBUG] vertex root.var.aws_access_key: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.var.aws_access_key: evaluating
+2016/04/21 15:25:11 [TRACE] [walkInput] Entering eval tree: var.aws_access_key
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalNoop
+2016/04/21 15:25:11 [TRACE] [walkInput] Exiting eval tree: var.aws_access_key
+2016/04/21 15:25:11 [DEBUG] vertex provider.aws, got dep: var.aws_access_key
+2016/04/21 15:25:11 [DEBUG] vertex provider.aws, got dep: var.aws_secret_key
+2016/04/21 15:25:11 [DEBUG] vertex provider.aws, got dep: var.default_region
+2016/04/21 15:25:11 [DEBUG] vertex root.provider.aws: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.provider.aws: evaluating
+2016/04/21 15:25:11 [TRACE] [walkInput] Entering eval tree: provider.aws
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInitProvider
+2016/04/21 15:25:11 [DEBUG] Starting plugin: /usr/local/terraform_0_6_14/terraform-provider-aws []string{"/usr/local/terraform_0_6_14/terraform-provider-aws"}
+2016/04/21 15:25:11 [DEBUG] Waiting for RPC address for: /usr/local/terraform_0_6_14/terraform-provider-aws
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:11 Plugin address: unix /var/folders/kl/1vw865bd33ncj0m8bclc37bc0000gn/T/tf-plugin467981310
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalGetProvider
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalBuildProviderConfig
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInputProvider
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [TRACE] [walkInput] Exiting eval tree: provider.aws
+2016/04/21 15:25:11 [DEBUG] vertex aws_route53_zone.lenadronorg, got dep: provider.aws
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_zone.lenadronorg: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_zone.lenadronorg: evaluating
+2016/04/21 15:25:11 [TRACE] [walkInput] Entering eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2016/04/21 15:25:11 [TRACE] [walkInput] Exiting eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_zone.lenadronorg: expanding/walking dynamic subgraph
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_zone.lenadronorg: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_zone.lenadronorg: evaluating
+2016/04/21 15:25:11 [TRACE] [walkInput] Entering eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [TRACE] [walkInput] Exiting eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [DEBUG] vertex aws_route53_record.lenadron_ns, got dep: aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_record.lenadron_ns: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_record.lenadron_ns: evaluating
+2016/04/21 15:25:11 [TRACE] [walkInput] Entering eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2016/04/21 15:25:11 [TRACE] [walkInput] Exiting eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_record.lenadron_ns: expanding/walking dynamic subgraph
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_record.lenadron_ns: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_record.lenadron_ns: evaluating
+2016/04/21 15:25:11 [TRACE] [walkInput] Entering eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [TRACE] [walkInput] Exiting eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [DEBUG] vertex provider.aws (close), got dep: aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [DEBUG] vertex root.provider.aws (close): walking
+2016/04/21 15:25:11 [DEBUG] vertex root.provider.aws (close): evaluating
+2016/04/21 15:25:11 [TRACE] [walkInput] Entering eval tree: provider.aws (close)
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalCloseProvider
+2016/04/21 15:25:11 [TRACE] [walkInput] Exiting eval tree: provider.aws (close)
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.OrphanTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.AddOutputOrphanTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.MissingProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.VertexTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.FlattenTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ProxyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.PruneProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.DestroyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy tainted)
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_record.lenadron_ns (destroy tainted)
+  provider.aws
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy tainted)
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy tainted)
+  aws_route53_record.lenadron_ns (destroy tainted)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.PruneDestroyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.PruneNoopTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.CloseProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.CloseProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [DEBUG] Starting graph walk: walkValidate
+2016/04/21 15:25:11 [DEBUG] vertex root.var.aws_access_key: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.var.aws_access_key: evaluating
+2016/04/21 15:25:11 [TRACE] [walkValidate] Entering eval tree: var.aws_access_key
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalNoop
+2016/04/21 15:25:11 [TRACE] [walkValidate] Exiting eval tree: var.aws_access_key
+2016/04/21 15:25:11 [DEBUG] vertex provider.aws, got dep: var.aws_access_key
+2016/04/21 15:25:11 [DEBUG] vertex root.var.aws_secret_key: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.var.aws_secret_key: evaluating
+2016/04/21 15:25:11 [TRACE] [walkValidate] Entering eval tree: var.aws_secret_key
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalNoop
+2016/04/21 15:25:11 [TRACE] [walkValidate] Exiting eval tree: var.aws_secret_key
+2016/04/21 15:25:11 [DEBUG] vertex provider.aws, got dep: var.aws_secret_key
+2016/04/21 15:25:11 [DEBUG] vertex root.var.default_region: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.var.default_region: evaluating
+2016/04/21 15:25:11 [TRACE] [walkValidate] Entering eval tree: var.default_region
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalNoop
+2016/04/21 15:25:11 [TRACE] [walkValidate] Exiting eval tree: var.default_region
+2016/04/21 15:25:11 [DEBUG] vertex provider.aws, got dep: var.default_region
+2016/04/21 15:25:11 [DEBUG] vertex root.provider.aws: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.provider.aws: evaluating
+2016/04/21 15:25:11 [TRACE] [walkValidate] Entering eval tree: provider.aws
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInitProvider
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalGetProvider
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalBuildProviderConfig
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalValidateProvider
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSetProviderConfig
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [TRACE] [walkValidate] Exiting eval tree: provider.aws
+2016/04/21 15:25:11 [DEBUG] vertex aws_route53_zone.lenadronorg, got dep: provider.aws
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_zone.lenadronorg: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_zone.lenadronorg: evaluating
+2016/04/21 15:25:11 [TRACE] [walkValidate] Entering eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalValidateCount
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2016/04/21 15:25:11 [TRACE] [walkValidate] Exiting eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_zone.lenadronorg: expanding/walking dynamic subgraph
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_zone.lenadronorg: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_zone.lenadronorg: evaluating
+2016/04/21 15:25:11 [TRACE] [walkValidate] Entering eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalGetProvider
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalValidateResource
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [TRACE] [walkValidate] Exiting eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [DEBUG] vertex aws_route53_record.lenadron_ns, got dep: aws_route53_zone.lenadronorg
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_record.lenadron_ns: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_record.lenadron_ns: evaluating
+2016/04/21 15:25:11 [TRACE] [walkValidate] Entering eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalValidateCount
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2016/04/21 15:25:11 [TRACE] [walkValidate] Exiting eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_record.lenadron_ns: expanding/walking dynamic subgraph
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_record.lenadron_ns: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.aws_route53_record.lenadron_ns: evaluating
+2016/04/21 15:25:11 [TRACE] [walkValidate] Entering eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalGetProvider
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalValidateResource
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [TRACE] [walkValidate] Exiting eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [DEBUG] vertex provider.aws (close), got dep: aws_route53_record.lenadron_ns
+2016/04/21 15:25:11 [DEBUG] vertex root.provider.aws (close): walking
+2016/04/21 15:25:11 [DEBUG] vertex root.provider.aws (close): evaluating
+2016/04/21 15:25:11 [TRACE] [walkValidate] Entering eval tree: provider.aws (close)
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalCloseProvider
+2016/04/21 15:25:11 [TRACE] [walkValidate] Exiting eval tree: provider.aws (close)
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.OrphanTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.AddOutputOrphanTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.MissingProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.VertexTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.FlattenTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.ProxyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.PruneProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.DestroyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy tainted)
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_record.lenadron_ns (destroy tainted)
+  provider.aws
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy tainted)
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy tainted)
+  aws_route53_record.lenadron_ns (destroy tainted)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.PruneDestroyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.PruneNoopTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.CloseProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.CloseProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:11 [DEBUG] Starting graph walk: walkRefresh
+2016/04/21 15:25:11 [DEBUG] vertex root.var.default_region: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.var.default_region: evaluating
+2016/04/21 15:25:11 [TRACE] [walkRefresh] Entering eval tree: var.default_region
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalNoop
+2016/04/21 15:25:11 [TRACE] [walkRefresh] Exiting eval tree: var.default_region
+2016/04/21 15:25:11 [DEBUG] vertex root.var.aws_secret_key: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.var.aws_secret_key: evaluating
+2016/04/21 15:25:11 [TRACE] [walkRefresh] Entering eval tree: var.aws_secret_key
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalNoop
+2016/04/21 15:25:11 [TRACE] [walkRefresh] Exiting eval tree: var.aws_secret_key
+2016/04/21 15:25:11 [DEBUG] vertex root.var.aws_access_key: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.var.aws_access_key: evaluating
+2016/04/21 15:25:11 [TRACE] [walkRefresh] Entering eval tree: var.aws_access_key
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalNoop
+2016/04/21 15:25:11 [TRACE] [walkRefresh] Exiting eval tree: var.aws_access_key
+2016/04/21 15:25:11 [DEBUG] vertex provider.aws, got dep: var.aws_access_key
+2016/04/21 15:25:11 [DEBUG] vertex provider.aws, got dep: var.aws_secret_key
+2016/04/21 15:25:11 [DEBUG] vertex provider.aws, got dep: var.default_region
+2016/04/21 15:25:11 [DEBUG] vertex root.provider.aws: walking
+2016/04/21 15:25:11 [DEBUG] vertex root.provider.aws: evaluating
+2016/04/21 15:25:11 [TRACE] [walkRefresh] Entering eval tree: provider.aws
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInitProvider
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalGetProvider
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalBuildProviderConfig
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSetProviderConfig
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:11 [DEBUG] root: eval: *terraform.EvalConfigProvider
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:11 [INFO] Building AWS region structure
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:11 [INFO] Building AWS auth structure
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:11 [DEBUG] EC2 Metadata service not found, not adding EC2 Role Credential Provider
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:11 [INFO] Initializing IAM Connection
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:11 [DEBUG] [aws-sdk-go] DEBUG: Request iam/GetUser Details:
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: ---[ REQUEST POST-SIGN ]-----------------------------
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: POST / HTTP/1.1
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: Host: iam.amazonaws.com
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: User-Agent: terraform/0.6.14 () aws-sdk-go/1.1.12 (go1.6; darwin; amd64)
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: Content-Length: 33
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: Authorization: AWS4-HMAC-SHA256 Credential=AKIAI5KV4NDI3HADDDHA/20160421/us-east-1/iam/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature=b6a428447e88e53eabc24506a594e2a3e3cb16f633c746a17dca4ed0d43fb4fb
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: Content-Type: application/x-www-form-urlencoded; charset=utf-8
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: X-Amz-Content-Sha256: 63cdc6da6b76dfdbbd82fe53059afd80e08926740ab5436bd2d4196da1af20db
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: X-Amz-Date: 20160421T222511Z
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: Accept-Encoding: gzip
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: Action=GetUser&Version=2010-05-08
+2016/04/21 15:25:11 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [DEBUG] [aws-sdk-go] DEBUG: Response iam/GetUser Details:
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: ---[ RESPONSE ]--------------------------------------
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: HTTP/1.1 200 OK
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: Connection: close
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: Content-Length: 523
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: Content-Type: text/xml
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: Date: Thu, 21 Apr 2016 22:25:11 GMT
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: X-Amzn-Requestid: e9da05f3-080f-11e6-8778-87d20c87d4b6
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: <GetUserResponse xmlns="https://iam.amazonaws.com/doc/2010-05-08/">
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws:   <GetUserResult>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws:     <User>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws:       <Path>/</Path>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws:       <PasswordLastUsed>2016-04-21T22:09:27Z</PasswordLastUsed>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws:       <UserName>adron</UserName>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws:       <Arn>arn:aws:iam::278322371435:user/adron</Arn>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws:       <UserId>AIDAIFKHYFX7M4Q7OQJ2O</UserId>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws:       <CreateDate>2016-04-21T19:19:25Z</CreateDate>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws:     </User>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws:   </GetUserResult>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws:   <ResponseMetadata>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws:     <RequestId>e9da05f3-080f-11e6-8778-87d20c87d4b6</RequestId>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws:   </ResponseMetadata>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: </GetUserResponse>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing DynamoDB connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing ELB connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing S3 connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing SQS connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing SNS connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing RDS Connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing Kinesis Connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing Elastic Beanstalk Connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing Kinesis Firehose Connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing AutoScaling connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing EC2 Connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing ECR Connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing API Gateway
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing ECS Connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing EFS Connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing ElasticSearch Connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing Route 53 connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing Elasticache Connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing Lambda Connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing Cloudformation Connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing CloudWatch SDK connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing CloudWatch Events connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing CloudTrail connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing CloudWatch Logs connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing OpsWorks Connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing Directory Service connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing Glacier connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing CodeDeploy Connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing CodeCommit SDK connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing Redshift SDK connection
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [INFO] Initializing KMS connection
+2016/04/21 15:25:12 [TRACE] [walkRefresh] Exiting eval tree: provider.aws
+2016/04/21 15:25:12 [DEBUG] vertex aws_route53_zone.lenadronorg, got dep: provider.aws
+2016/04/21 15:25:12 [DEBUG] vertex root.aws_route53_zone.lenadronorg: walking
+2016/04/21 15:25:12 [DEBUG] vertex root.aws_route53_zone.lenadronorg: evaluating
+2016/04/21 15:25:12 [TRACE] [walkRefresh] Entering eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:12 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:12 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:12 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:12 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2016/04/21 15:25:12 [TRACE] [walkRefresh] Exiting eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:12 [DEBUG] vertex root.aws_route53_zone.lenadronorg: expanding/walking dynamic subgraph
+2016/04/21 15:25:12 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+aws_route53_zone.lenadronorg
+2016/04/21 15:25:12 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_zone.lenadronorg
+2016/04/21 15:25:12 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_zone.lenadronorg
+2016/04/21 15:25:12 [DEBUG] vertex root.aws_route53_zone.lenadronorg: walking
+2016/04/21 15:25:12 [DEBUG] vertex root.aws_route53_zone.lenadronorg: evaluating
+2016/04/21 15:25:12 [TRACE] [walkRefresh] Entering eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:12 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:12 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:12 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2016/04/21 15:25:12 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:12 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:12 [DEBUG] root: eval: *terraform.EvalGetProvider
+2016/04/21 15:25:12 [DEBUG] root: eval: *terraform.EvalReadState
+2016/04/21 15:25:12 [DEBUG] root: eval: *terraform.EvalRefresh
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [DEBUG] [aws-sdk-go] DEBUG: Request route53/GetHostedZone Details:
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: ---[ REQUEST POST-SIGN ]-----------------------------
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: GET http://route53.amazonaws.com/2013-04-01/hostedzone/Z2FEMGQIDGB014 HTTP/1.1
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: Host: route53.amazonaws.com
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: User-Agent: terraform/0.6.14 () aws-sdk-go/1.1.12 (go1.6; darwin; amd64)
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: Authorization: AWS4-HMAC-SHA256 Credential=AKIAI5KV4NDI3HADDDHA/20160421/us-east-1/route53/aws4_request, SignedHeaders=host;x-amz-date, Signature=d352633796747f9cd00884f58af78fc89f6b99e58123e76c156ba666d22536f9
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: X-Amz-Date: 20160421T222512Z
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: Accept-Encoding: gzip
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [DEBUG] [aws-sdk-go] DEBUG: Response route53/GetHostedZone Details:
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: ---[ RESPONSE ]--------------------------------------
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: HTTP/1.1 200 OK
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: Content-Length: 659
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: Content-Type: text/xml
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: Date: Thu, 21 Apr 2016 22:25:12 GMT
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: X-Amzn-Requestid: ea1d500f-080f-11e6-aa45-251146c9f62b
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: <?xml version="1.0"?>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: <GetHostedZoneResponse xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><HostedZone><Id>/hostedzone/Z2FEMGQIDGB014</Id><Name>lenadron.org.</Name><CallerReference>2016-04-21T15:23:47.660407783-07:00</CallerReference><Config><Comment>Lenadron org domain.</Comment><PrivateZone>false</PrivateZone></Config><ResourceRecordSetCount>2</ResourceRecordSetCount></HostedZone><DelegationSet><NameServers><NameServer>ns-1513.awsdns-61.org</NameServer><NameServer>ns-174.awsdns-21.com</NameServer><NameServer>ns-1689.awsdns-19.co.uk</NameServer><NameServer>ns-589.awsdns-09.net</NameServer></NameServers></DelegationSet></GetHostedZoneResponse>
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:12 [DEBUG] [aws-sdk-go] DEBUG: Request route53/ListTagsForResource Details:
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: ---[ REQUEST POST-SIGN ]-----------------------------
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: GET http://route53.amazonaws.com/2013-04-01/tags/hostedzone/Z2FEMGQIDGB014 HTTP/1.1
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: Host: route53.amazonaws.com
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: User-Agent: terraform/0.6.14 () aws-sdk-go/1.1.12 (go1.6; darwin; amd64)
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: Authorization: AWS4-HMAC-SHA256 Credential=AKIAI5KV4NDI3HADDDHA/20160421/us-east-1/route53/aws4_request, SignedHeaders=host;x-amz-date, Signature=ffd2321e29d2fd401b22acdcee624b355f8a8026cecba22792a2db8731b1a428
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: X-Amz-Date: 20160421T222512Z
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: Accept-Encoding: gzip
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:12 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:13 [DEBUG] [aws-sdk-go] DEBUG: Response route53/ListTagsForResource Details:
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: ---[ RESPONSE ]--------------------------------------
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: HTTP/1.1 200 OK
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: Content-Length: 327
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: Content-Type: text/xml
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: Date: Thu, 21 Apr 2016 22:25:12 GMT
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: X-Amzn-Requestid: ea7c87ae-080f-11e6-9f07-2f6387e8d3e8
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: <?xml version="1.0"?>
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: <ListTagsForResourceResponse xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><ResourceTagSet><ResourceType>hostedzone</ResourceType><ResourceId>Z2FEMGQIDGB014</ResourceId><Tags><Tag><Key>Environment</Key><Value>Lenadron org domain.</Value></Tag></Tags></ResourceTagSet></ListTagsForResourceResponse>
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:13 [DEBUG] root: eval: *terraform.EvalWriteState
+2016/04/21 15:25:13 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:13 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:13 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:13 [TRACE] [walkRefresh] Exiting eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:13 [DEBUG] vertex aws_route53_record.lenadron_ns, got dep: aws_route53_zone.lenadronorg
+2016/04/21 15:25:13 [DEBUG] vertex root.aws_route53_record.lenadron_ns: walking
+2016/04/21 15:25:13 [DEBUG] vertex root.aws_route53_record.lenadron_ns: evaluating
+2016/04/21 15:25:13 [TRACE] [walkRefresh] Entering eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:13 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:13 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:13 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:13 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2016/04/21 15:25:13 [TRACE] [walkRefresh] Exiting eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:13 [DEBUG] vertex root.aws_route53_record.lenadron_ns: expanding/walking dynamic subgraph
+2016/04/21 15:25:13 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+aws_route53_record.lenadron_ns
+2016/04/21 15:25:13 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_record.lenadron_ns
+2016/04/21 15:25:13 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_record.lenadron_ns
+2016/04/21 15:25:13 [DEBUG] vertex root.aws_route53_record.lenadron_ns: walking
+2016/04/21 15:25:13 [DEBUG] vertex root.aws_route53_record.lenadron_ns: evaluating
+2016/04/21 15:25:13 [TRACE] [walkRefresh] Entering eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:13 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:13 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:13 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2016/04/21 15:25:13 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:13 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:13 [DEBUG] root: eval: *terraform.EvalGetProvider
+2016/04/21 15:25:13 [DEBUG] root: eval: *terraform.EvalReadState
+2016/04/21 15:25:13 [DEBUG] root: eval: *terraform.EvalRefresh
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:13 [DEBUG] [aws-sdk-go] DEBUG: Request route53/GetHostedZone Details:
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: ---[ REQUEST POST-SIGN ]-----------------------------
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: GET http://route53.amazonaws.com/2013-04-01/hostedzone/Z2FEMGQIDGB014 HTTP/1.1
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: Host: route53.amazonaws.com
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: User-Agent: terraform/0.6.14 () aws-sdk-go/1.1.12 (go1.6; darwin; amd64)
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: Authorization: AWS4-HMAC-SHA256 Credential=AKIAI5KV4NDI3HADDDHA/20160421/us-east-1/route53/aws4_request, SignedHeaders=host;x-amz-date, Signature=7ada2d2447ba6757edf2f78c4020f893bbcc1cf6fd3f3b3922195c1b6940a0dd
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: X-Amz-Date: 20160421T222513Z
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: Accept-Encoding: gzip
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:13 [DEBUG] [aws-sdk-go] DEBUG: Response route53/GetHostedZone Details:
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: ---[ RESPONSE ]--------------------------------------
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: HTTP/1.1 200 OK
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: Content-Length: 659
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: Content-Type: text/xml
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: Date: Thu, 21 Apr 2016 22:25:12 GMT
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: X-Amzn-Requestid: eac59dd3-080f-11e6-a4e2-7d370835b99c
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: <?xml version="1.0"?>
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: <GetHostedZoneResponse xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><HostedZone><Id>/hostedzone/Z2FEMGQIDGB014</Id><Name>lenadron.org.</Name><CallerReference>2016-04-21T15:23:47.660407783-07:00</CallerReference><Config><Comment>Lenadron org domain.</Comment><PrivateZone>false</PrivateZone></Config><ResourceRecordSetCount>2</ResourceRecordSetCount></HostedZone><DelegationSet><NameServers><NameServer>ns-1513.awsdns-61.org</NameServer><NameServer>ns-174.awsdns-21.com</NameServer><NameServer>ns-1689.awsdns-19.co.uk</NameServer><NameServer>ns-589.awsdns-09.net</NameServer></NameServers></DelegationSet></GetHostedZoneResponse>
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:13 [DEBUG] Expanded record name: lenadron.org
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:13 [DEBUG] List resource records sets for zone: Z2FEMGQIDGB014, opts: {
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws:   HostedZoneId: "Z2FEMGQIDGB014",
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws:   StartRecordName: "lenadron.org",
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws:   StartRecordType: "NS"
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: }
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:13 [DEBUG] [aws-sdk-go] DEBUG: Request route53/ListResourceRecordSets Details:
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: ---[ REQUEST POST-SIGN ]-----------------------------
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: GET http://route53.amazonaws.com/2013-04-01/hostedzone/Z2FEMGQIDGB014/rrset?name=lenadron.org&type=NS HTTP/1.1
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: Host: route53.amazonaws.com
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: User-Agent: terraform/0.6.14 () aws-sdk-go/1.1.12 (go1.6; darwin; amd64)
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: Authorization: AWS4-HMAC-SHA256 Credential=AKIAI5KV4NDI3HADDDHA/20160421/us-east-1/route53/aws4_request, SignedHeaders=host;x-amz-date, Signature=ac91ca0b11c13b934bf8e5659c78fbda6809be14b060ba5e8d3846f92717fa53
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: X-Amz-Date: 20160421T222513Z
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: Accept-Encoding: gzip
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:13 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:14 [DEBUG] [aws-sdk-go] DEBUG: Response route53/ListResourceRecordSets Details:
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: ---[ RESPONSE ]--------------------------------------
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: HTTP/1.1 200 OK
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: Content-Length: 897
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: Content-Type: text/xml
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: Date: Thu, 21 Apr 2016 22:25:14 GMT
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: X-Amzn-Requestid: eb28f38d-080f-11e6-8eeb-c77a3a67ca8c
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: <?xml version="1.0"?>
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: <ListResourceRecordSetsResponse xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><ResourceRecordSets><ResourceRecordSet><Name>lenadron.org.</Name><Type>NS</Type><TTL>30</TTL><ResourceRecords><ResourceRecord><Value>ns-589.awsdns-09.net</Value></ResourceRecord><ResourceRecord><Value>ns-174.awsdns-21.com</Value></ResourceRecord><ResourceRecord><Value>ns-1513.awsdns-61.org</Value></ResourceRecord><ResourceRecord><Value>ns-1689.awsdns-19.co.uk</Value></ResourceRecord></ResourceRecords></ResourceRecordSet><ResourceRecordSet><Name>lenadron.org.</Name><Type>SOA</Type><TTL>900</TTL><ResourceRecords><ResourceRecord><Value>ns-1513.awsdns-61.org. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400</Value></ResourceRecord></ResourceRecords></ResourceRecordSet></ResourceRecordSets><IsTruncated>false</IsTruncated><MaxItems>100</MaxItems></ListResourceRecordSetsResponse>
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalWriteState
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [TRACE] [walkRefresh] Exiting eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:14 [DEBUG] vertex provider.aws (close), got dep: aws_route53_record.lenadron_ns
+2016/04/21 15:25:14 [DEBUG] vertex root.provider.aws (close): walking
+2016/04/21 15:25:14 [DEBUG] vertex root.provider.aws (close): evaluating
+2016/04/21 15:25:14 [TRACE] [walkRefresh] Entering eval tree: provider.aws (close)
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalCloseProvider
+2016/04/21 15:25:14 [TRACE] [walkRefresh] Exiting eval tree: provider.aws (close)
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.OrphanTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.AddOutputOrphanTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.MissingProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.ProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.VertexTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.FlattenTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.ProxyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.PruneProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.DestroyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy tainted)
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_record.lenadron_ns (destroy tainted)
+  provider.aws
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy tainted)
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy tainted)
+  aws_route53_record.lenadron_ns (destroy tainted)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.PruneDestroyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.PruneNoopTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.CloseProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.CloseProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [DEBUG] Starting graph walk: walkPlanDestroy
+2016/04/21 15:25:14 [DEBUG] vertex root.var.aws_secret_key: walking
+2016/04/21 15:25:14 [DEBUG] vertex root.var.aws_secret_key: evaluating
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Entering eval tree: var.aws_secret_key
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalNoop
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Exiting eval tree: var.aws_secret_key
+2016/04/21 15:25:14 [DEBUG] vertex root.var.aws_access_key: walking
+2016/04/21 15:25:14 [DEBUG] vertex root.var.aws_access_key: evaluating
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Entering eval tree: var.aws_access_key
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalNoop
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Exiting eval tree: var.aws_access_key
+2016/04/21 15:25:14 [DEBUG] vertex provider.aws, got dep: var.aws_access_key
+2016/04/21 15:25:14 [DEBUG] vertex provider.aws, got dep: var.aws_secret_key
+2016/04/21 15:25:14 [DEBUG] vertex root.var.default_region: walking
+2016/04/21 15:25:14 [DEBUG] vertex root.var.default_region: evaluating
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Entering eval tree: var.default_region
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalNoop
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Exiting eval tree: var.default_region
+2016/04/21 15:25:14 [DEBUG] vertex provider.aws, got dep: var.default_region
+2016/04/21 15:25:14 [DEBUG] vertex root.provider.aws: walking
+2016/04/21 15:25:14 [DEBUG] vertex root.provider.aws: evaluating
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Entering eval tree: provider.aws
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalInitProvider
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Exiting eval tree: provider.aws
+2016/04/21 15:25:14 [DEBUG] vertex aws_route53_zone.lenadronorg, got dep: provider.aws
+2016/04/21 15:25:14 [DEBUG] vertex root.aws_route53_zone.lenadronorg: walking
+2016/04/21 15:25:14 [DEBUG] vertex root.aws_route53_zone.lenadronorg: evaluating
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Entering eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Exiting eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:14 [DEBUG] vertex root.aws_route53_zone.lenadronorg: expanding/walking dynamic subgraph
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+aws_route53_zone.lenadronorg
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_zone.lenadronorg
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_zone.lenadronorg
+2016/04/21 15:25:14 [DEBUG] vertex root.aws_route53_zone.lenadronorg: walking
+2016/04/21 15:25:14 [DEBUG] vertex root.aws_route53_zone.lenadronorg: evaluating
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Entering eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalReadState
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalDiffDestroy
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalCheckPreventDestroy
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalWriteDiff
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Exiting eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:14 [DEBUG] vertex aws_route53_record.lenadron_ns, got dep: aws_route53_zone.lenadronorg
+2016/04/21 15:25:14 [DEBUG] vertex root.aws_route53_record.lenadron_ns: walking
+2016/04/21 15:25:14 [DEBUG] vertex root.aws_route53_record.lenadron_ns: evaluating
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Entering eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Exiting eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:14 [DEBUG] vertex root.aws_route53_record.lenadron_ns: expanding/walking dynamic subgraph
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+aws_route53_record.lenadron_ns
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_record.lenadron_ns
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_record.lenadron_ns
+2016/04/21 15:25:14 [DEBUG] vertex root.aws_route53_record.lenadron_ns: walking
+2016/04/21 15:25:14 [DEBUG] vertex root.aws_route53_record.lenadron_ns: evaluating
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Entering eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalReadState
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalDiffDestroy
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalCheckPreventDestroy
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalWriteDiff
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Exiting eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:14 [DEBUG] vertex provider.aws (close), got dep: aws_route53_record.lenadron_ns
+2016/04/21 15:25:14 [DEBUG] vertex root.provider.aws (close): walking
+2016/04/21 15:25:14 [DEBUG] vertex root.provider.aws (close): evaluating
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Entering eval tree: provider.aws (close)
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalCloseProvider
+2016/04/21 15:25:14 [TRACE] [walkPlanDestroy] Exiting eval tree: provider.aws (close)
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.OrphanTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.AddOutputOrphanTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.MissingProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.ProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.VertexTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.FlattenTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.ProxyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.PruneProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.DestroyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy tainted)
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_record.lenadron_ns (destroy tainted)
+  provider.aws
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy tainted)
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy tainted)
+  aws_route53_record.lenadron_ns (destroy tainted)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.PruneDestroyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.PruneNoopTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.CloseProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.CloseProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.ConfigTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.OrphanTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.AddOutputOrphanTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.MissingProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_zone.lenadronorg
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.ProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.DisableProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.MissingProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.ProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.VertexTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.FlattenTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.ProxyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.PruneProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_zone.lenadronorg
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.DestroyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy tainted)
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_record.lenadron_ns (destroy tainted)
+  provider.aws
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy tainted)
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy tainted)
+  aws_route53_record.lenadron_ns (destroy tainted)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.PruneDestroyTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.PruneNoopTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.CloseProviderTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.CloseProvisionerTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  provider.aws
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+  aws_route53_record.lenadron_ns (destroy)
+  aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+  provider.aws
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.TransitiveReductionTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_record.lenadron_ns
+  aws_route53_zone.lenadronorg
+aws_route53_record.lenadron_ns (destroy)
+  provider.aws
+aws_route53_zone.lenadronorg
+  aws_route53_zone.lenadronorg (destroy)
+aws_route53_zone.lenadronorg (destroy)
+  aws_route53_record.lenadron_ns (destroy)
+provider.aws
+  var.aws_access_key
+  var.aws_secret_key
+  var.default_region
+provider.aws (close)
+  aws_route53_record.lenadron_ns
+var.aws_access_key
+var.aws_secret_key
+var.default_region
+2016/04/21 15:25:14 [DEBUG] Starting graph walk: walkDestroy
+2016/04/21 15:25:14 [DEBUG] vertex root.var.default_region: walking
+2016/04/21 15:25:14 [DEBUG] vertex root.var.default_region: evaluating
+2016/04/21 15:25:14 [TRACE] [walkDestroy] Entering eval tree: var.default_region
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalNoop
+2016/04/21 15:25:14 [TRACE] [walkDestroy] Exiting eval tree: var.default_region
+2016/04/21 15:25:14 [DEBUG] vertex root.var.aws_secret_key: walking
+2016/04/21 15:25:14 [DEBUG] vertex root.var.aws_secret_key: evaluating
+2016/04/21 15:25:14 [TRACE] [walkDestroy] Entering eval tree: var.aws_secret_key
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalNoop
+2016/04/21 15:25:14 [TRACE] [walkDestroy] Exiting eval tree: var.aws_secret_key
+2016/04/21 15:25:14 [DEBUG] vertex root.var.aws_access_key: walking
+2016/04/21 15:25:14 [DEBUG] vertex root.var.aws_access_key: evaluating
+2016/04/21 15:25:14 [TRACE] [walkDestroy] Entering eval tree: var.aws_access_key
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalNoop
+2016/04/21 15:25:14 [TRACE] [walkDestroy] Exiting eval tree: var.aws_access_key
+2016/04/21 15:25:14 [DEBUG] vertex provider.aws, got dep: var.aws_access_key
+2016/04/21 15:25:14 [DEBUG] vertex provider.aws, got dep: var.aws_secret_key
+2016/04/21 15:25:14 [DEBUG] vertex provider.aws, got dep: var.default_region
+2016/04/21 15:25:14 [DEBUG] vertex root.provider.aws: walking
+2016/04/21 15:25:14 [DEBUG] vertex root.provider.aws: evaluating
+2016/04/21 15:25:14 [TRACE] [walkDestroy] Entering eval tree: provider.aws
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalInitProvider
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalGetProvider
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalBuildProviderConfig
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalSetProviderConfig
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:14 [DEBUG] root: eval: *terraform.EvalConfigProvider
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:14 [INFO] Building AWS region structure
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:14 [INFO] Building AWS auth structure
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:14 [DEBUG] EC2 Metadata service not found, not adding EC2 Role Credential Provider
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:14 [INFO] Initializing IAM Connection
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:14 [DEBUG] [aws-sdk-go] DEBUG: Request iam/GetUser Details:
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: ---[ REQUEST POST-SIGN ]-----------------------------
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: POST / HTTP/1.1
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: Host: iam.amazonaws.com
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: User-Agent: terraform/0.6.14 () aws-sdk-go/1.1.12 (go1.6; darwin; amd64)
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: Content-Length: 33
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: Authorization: AWS4-HMAC-SHA256 Credential=AKIAI5KV4NDI3HADDDHA/20160421/us-east-1/iam/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature=2817f243f0edeb07ad065ab09e38b075d22de0d3693b2ad707331ed7b777baae
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: Content-Type: application/x-www-form-urlencoded; charset=utf-8
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: X-Amz-Content-Sha256: 63cdc6da6b76dfdbbd82fe53059afd80e08926740ab5436bd2d4196da1af20db
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: X-Amz-Date: 20160421T222514Z
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: Accept-Encoding: gzip
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: Action=GetUser&Version=2010-05-08
+2016/04/21 15:25:14 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [DEBUG] [aws-sdk-go] DEBUG: Response iam/GetUser Details:
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: ---[ RESPONSE ]--------------------------------------
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: HTTP/1.1 200 OK
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: Connection: close
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: Content-Length: 523
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: Content-Type: text/xml
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: Date: Thu, 21 Apr 2016 22:25:14 GMT
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: X-Amzn-Requestid: eb801526-080f-11e6-b9fb-11fb27963e0c
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: <GetUserResponse xmlns="https://iam.amazonaws.com/doc/2010-05-08/">
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws:   <GetUserResult>
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws:     <User>
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws:       <Path>/</Path>
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws:       <PasswordLastUsed>2016-04-21T22:09:27Z</PasswordLastUsed>
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws:       <UserName>adron</UserName>
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws:       <Arn>arn:aws:iam::278322371435:user/adron</Arn>
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws:       <UserId>AIDAIFKHYFX7M4Q7OQJ2O</UserId>
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws:       <CreateDate>2016-04-21T19:19:25Z</CreateDate>
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws:     </User>
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws:   </GetUserResult>
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws:   <ResponseMetadata>
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws:     <RequestId>eb801526-080f-11e6-b9fb-11fb27963e0c</RequestId>
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws:   </ResponseMetadata>
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: </GetUserResponse>
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing DynamoDB connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing ELB connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing S3 connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing SQS connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing SNS connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing RDS Connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing Kinesis Connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing Elastic Beanstalk Connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing Kinesis Firehose Connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing AutoScaling connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing EC2 Connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing ECR Connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing API Gateway
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing ECS Connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing EFS Connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing ElasticSearch Connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing Route 53 connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing Elasticache Connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing Lambda Connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing Cloudformation Connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing CloudWatch SDK connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing CloudWatch Events connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing CloudTrail connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing CloudWatch Logs connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing OpsWorks Connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing Directory Service connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing Glacier connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing CodeDeploy Connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing CodeCommit SDK connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing Redshift SDK connection
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [INFO] Initializing KMS connection
+2016/04/21 15:25:15 [TRACE] [walkDestroy] Exiting eval tree: provider.aws
+2016/04/21 15:25:15 [DEBUG] vertex aws_route53_record.lenadron_ns (destroy), got dep: provider.aws
+2016/04/21 15:25:15 [DEBUG] vertex root.aws_route53_record.lenadron_ns (destroy): walking
+2016/04/21 15:25:15 [DEBUG] vertex root.aws_route53_record.lenadron_ns (destroy): evaluating
+2016/04/21 15:25:15 [TRACE] [walkDestroy] Entering eval tree: aws_route53_record.lenadron_ns (destroy)
+2016/04/21 15:25:15 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:15 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:15 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:15 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2016/04/21 15:25:15 [TRACE] [walkDestroy] Exiting eval tree: aws_route53_record.lenadron_ns (destroy)
+2016/04/21 15:25:15 [DEBUG] vertex root.aws_route53_record.lenadron_ns (destroy): expanding/walking dynamic subgraph
+2016/04/21 15:25:15 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+aws_route53_record.lenadron_ns (destroy)
+2016/04/21 15:25:15 [TRACE] Graph after step *terraform.OrphanTransformer:
+
+aws_route53_record.lenadron_ns (destroy)
+2016/04/21 15:25:15 [TRACE] Graph after step *terraform.DeposedTransformer:
+
+aws_route53_record.lenadron_ns (destroy)
+2016/04/21 15:25:15 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_record.lenadron_ns (destroy)
+2016/04/21 15:25:15 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_record.lenadron_ns (destroy)
+2016/04/21 15:25:15 [DEBUG] vertex root.aws_route53_record.lenadron_ns (destroy): walking
+2016/04/21 15:25:15 [DEBUG] vertex root.aws_route53_record.lenadron_ns (destroy): evaluating
+2016/04/21 15:25:15 [TRACE] [walkDestroy] Entering eval tree: aws_route53_record.lenadron_ns (destroy)
+2016/04/21 15:25:15 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:15 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:15 [DEBUG] root: eval: *terraform.EvalReadDiff
+2016/04/21 15:25:15 [DEBUG] root: eval: *terraform.EvalFilterDiff
+2016/04/21 15:25:15 [DEBUG] root: eval: *terraform.EvalIf
+2016/04/21 15:25:15 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:15 [DEBUG] root: eval: *terraform.EvalGetProvider
+2016/04/21 15:25:15 [DEBUG] root: eval: *terraform.EvalReadState
+2016/04/21 15:25:15 [DEBUG] root: eval: *terraform.EvalRequireState
+2016/04/21 15:25:15 [DEBUG] root: eval: *terraform.EvalApply
+2016/04/21 15:25:15 [DEBUG] apply: aws_route53_record.lenadron_ns: executing Apply
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:15 [DEBUG] [aws-sdk-go] DEBUG: Request route53/GetHostedZone Details:
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: ---[ REQUEST POST-SIGN ]-----------------------------
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: GET http://route53.amazonaws.com/2013-04-01/hostedzone/Z2FEMGQIDGB014 HTTP/1.1
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: Host: route53.amazonaws.com
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: User-Agent: terraform/0.6.14 () aws-sdk-go/1.1.12 (go1.6; darwin; amd64)
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: Authorization: AWS4-HMAC-SHA256 Credential=AKIAI5KV4NDI3HADDDHA/20160421/us-east-1/route53/aws4_request, SignedHeaders=host;x-amz-date, Signature=f62c9978d912d515efcb7d54dab943730efb5990bc0f5952e2ef78886174a455
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: X-Amz-Date: 20160421T222515Z
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: Accept-Encoding: gzip
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:15 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:16 [DEBUG] [aws-sdk-go] DEBUG: Response route53/GetHostedZone Details:
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: ---[ RESPONSE ]--------------------------------------
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: HTTP/1.1 200 OK
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: Content-Length: 659
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: Content-Type: text/xml
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: Date: Thu, 21 Apr 2016 22:25:15 GMT
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: X-Amzn-Requestid: ec0b8b79-080f-11e6-9e05-5fb59d0694d4
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: <?xml version="1.0"?>
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: <GetHostedZoneResponse xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><HostedZone><Id>/hostedzone/Z2FEMGQIDGB014</Id><Name>lenadron.org.</Name><CallerReference>2016-04-21T15:23:47.660407783-07:00</CallerReference><Config><Comment>Lenadron org domain.</Comment><PrivateZone>false</PrivateZone></Config><ResourceRecordSetCount>2</ResourceRecordSetCount></HostedZone><DelegationSet><NameServers><NameServer>ns-1513.awsdns-61.org</NameServer><NameServer>ns-174.awsdns-21.com</NameServer><NameServer>ns-1689.awsdns-19.co.uk</NameServer><NameServer>ns-589.awsdns-09.net</NameServer></NameServers></DelegationSet></GetHostedZoneResponse>
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:16 [DEBUG] Expanded record name: lenadron.org
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:16 [DEBUG] List resource records sets for zone: Z2FEMGQIDGB014, opts: {
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws:   HostedZoneId: "Z2FEMGQIDGB014",
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws:   StartRecordName: "lenadron.org",
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws:   StartRecordType: "NS"
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: }
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:16 [DEBUG] [aws-sdk-go] DEBUG: Request route53/ListResourceRecordSets Details:
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: ---[ REQUEST POST-SIGN ]-----------------------------
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: GET http://route53.amazonaws.com/2013-04-01/hostedzone/Z2FEMGQIDGB014/rrset?name=lenadron.org&type=NS HTTP/1.1
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: Host: route53.amazonaws.com
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: User-Agent: terraform/0.6.14 () aws-sdk-go/1.1.12 (go1.6; darwin; amd64)
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: Authorization: AWS4-HMAC-SHA256 Credential=AKIAI5KV4NDI3HADDDHA/20160421/us-east-1/route53/aws4_request, SignedHeaders=host;x-amz-date, Signature=2f27443183380e4f766cf2b7c750179180ed7bcd152801ad01ca059e5a9a96e5
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: X-Amz-Date: 20160421T222516Z
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: Accept-Encoding: gzip
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:16 [DEBUG] [aws-sdk-go] DEBUG: Response route53/ListResourceRecordSets Details:
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: ---[ RESPONSE ]--------------------------------------
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: HTTP/1.1 200 OK
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: Content-Length: 897
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: Content-Type: text/xml
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: Date: Thu, 21 Apr 2016 22:25:15 GMT
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: X-Amzn-Requestid: ec6fcbba-080f-11e6-9e05-5fb59d0694d4
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: <?xml version="1.0"?>
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: <ListResourceRecordSetsResponse xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><ResourceRecordSets><ResourceRecordSet><Name>lenadron.org.</Name><Type>NS</Type><TTL>30</TTL><ResourceRecords><ResourceRecord><Value>ns-589.awsdns-09.net</Value></ResourceRecord><ResourceRecord><Value>ns-174.awsdns-21.com</Value></ResourceRecord><ResourceRecord><Value>ns-1513.awsdns-61.org</Value></ResourceRecord><ResourceRecord><Value>ns-1689.awsdns-19.co.uk</Value></ResourceRecord></ResourceRecords></ResourceRecordSet><ResourceRecordSet><Name>lenadron.org.</Name><Type>SOA</Type><TTL>900</TTL><ResourceRecords><ResourceRecord><Value>ns-1513.awsdns-61.org. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400</Value></ResourceRecord></ResourceRecords></ResourceRecordSet></ResourceRecordSets><IsTruncated>false</IsTruncated><MaxItems>100</MaxItems></ListResourceRecordSetsResponse>
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:16 [DEBUG] Waiting for state to become: [accepted]
+2016/04/21 15:25:16 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:16 [TRACE] Waiting 1s before next try
+2016/04/21 15:25:17 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:17 [DEBUG] [aws-sdk-go] DEBUG: Request route53/ChangeResourceRecordSets Details:
+2016/04/21 15:25:17 [DEBUG] terraform-provider-aws: ---[ REQUEST POST-SIGN ]-----------------------------
+2016/04/21 15:25:17 [DEBUG] terraform-provider-aws: POST http://route53.amazonaws.com/2013-04-01/hostedzone/Z2FEMGQIDGB014/rrset/ HTTP/1.1
+2016/04/21 15:25:17 [DEBUG] terraform-provider-aws: Host: route53.amazonaws.com
+2016/04/21 15:25:17 [DEBUG] terraform-provider-aws: User-Agent: terraform/0.6.14 () aws-sdk-go/1.1.12 (go1.6; darwin; amd64)
+2016/04/21 15:25:17 [DEBUG] terraform-provider-aws: Content-Length: 650
+2016/04/21 15:25:17 [DEBUG] terraform-provider-aws: Authorization: AWS4-HMAC-SHA256 Credential=AKIAI5KV4NDI3HADDDHA/20160421/us-east-1/route53/aws4_request, SignedHeaders=host;x-amz-date, Signature=e9b51c2bf95cfbab90fcfdadb4271a864736cafe93d23684bb23d400592031fb
+2016/04/21 15:25:17 [DEBUG] terraform-provider-aws: X-Amz-Content-Sha256: 64083683db84bd3f458a7daca349afa2aeb7e1616c6d21b630a7a355737af655
+2016/04/21 15:25:17 [DEBUG] terraform-provider-aws: X-Amz-Date: 20160421T222517Z
+2016/04/21 15:25:17 [DEBUG] terraform-provider-aws: Accept-Encoding: gzip
+2016/04/21 15:25:17 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:17 [DEBUG] terraform-provider-aws: <ChangeResourceRecordSetsRequest xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><ChangeBatch><Changes><Change><ResourceRecordSet><Name>lenadron.org.</Name><ResourceRecords><ResourceRecord><Value>ns-589.awsdns-09.net</Value></ResourceRecord><ResourceRecord><Value>ns-174.awsdns-21.com</Value></ResourceRecord><ResourceRecord><Value>ns-1513.awsdns-61.org</Value></ResourceRecord><ResourceRecord><Value>ns-1689.awsdns-19.co.uk</Value></ResourceRecord></ResourceRecords><TTL>30</TTL><Type>NS</Type></ResourceRecordSet><Action>DELETE</Action></Change></Changes><Comment>Deleted by Terraform</Comment></ChangeBatch></ChangeResourceRecordSetsRequest>
+2016/04/21 15:25:17 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:18 [DEBUG] [aws-sdk-go] DEBUG: Response route53/ChangeResourceRecordSets Details:
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: ---[ RESPONSE ]--------------------------------------
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: HTTP/1.1 400 Bad Request
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: Connection: close
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: Content-Length: 319
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: Content-Type: text/xml
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: Date: Thu, 21 Apr 2016 22:25:17 GMT
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: X-Amzn-Actiontrace: amzn1.tr.ed5d6032-080f-11e6-bdac-0a761c070200.-1.jJVd3X.bxcG#2
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: X-Amzn-Requestid: ed51049f-080f-11e6-942d-61363c1b41c5
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: <?xml version="1.0"?>
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: <ErrorResponse xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><Error><Type>Sender</Type><Code>InvalidChangeBatch</Code><Message>A HostedZone must contain at least one NS record for the zone itself.</Message></Error><RequestId>ed51049f-080f-11e6-942d-61363c1b41c5</RequestId></ErrorResponse>
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalWriteState
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalApplyPost
+2016/04/21 15:25:18 [TRACE] [walkDestroy] Exiting eval tree: aws_route53_record.lenadron_ns (destroy)
+2016/04/21 15:25:18 [DEBUG] vertex aws_route53_zone.lenadronorg (destroy), got dep: aws_route53_record.lenadron_ns (destroy)
+2016/04/21 15:25:18 [DEBUG] vertex root.aws_route53_zone.lenadronorg (destroy): walking
+2016/04/21 15:25:18 [DEBUG] vertex root.aws_route53_zone.lenadronorg (destroy): evaluating
+2016/04/21 15:25:18 [TRACE] [walkDestroy] Entering eval tree: aws_route53_zone.lenadronorg (destroy)
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:18 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2016/04/21 15:25:18 [TRACE] [walkDestroy] Exiting eval tree: aws_route53_zone.lenadronorg (destroy)
+2016/04/21 15:25:18 [DEBUG] vertex root.aws_route53_zone.lenadronorg (destroy): expanding/walking dynamic subgraph
+2016/04/21 15:25:18 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+aws_route53_zone.lenadronorg (destroy)
+2016/04/21 15:25:18 [TRACE] Graph after step *terraform.OrphanTransformer:
+
+aws_route53_zone.lenadronorg (destroy)
+2016/04/21 15:25:18 [TRACE] Graph after step *terraform.DeposedTransformer:
+
+aws_route53_zone.lenadronorg (destroy)
+2016/04/21 15:25:18 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_zone.lenadronorg (destroy)
+2016/04/21 15:25:18 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_zone.lenadronorg (destroy)
+2016/04/21 15:25:18 [DEBUG] vertex root.aws_route53_zone.lenadronorg (destroy): walking
+2016/04/21 15:25:18 [DEBUG] vertex root.aws_route53_zone.lenadronorg (destroy): evaluating
+2016/04/21 15:25:18 [TRACE] [walkDestroy] Entering eval tree: aws_route53_zone.lenadronorg (destroy)
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalReadDiff
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalFilterDiff
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalIf
+2016/04/21 15:25:18 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalGetProvider
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalReadState
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalRequireState
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalApply
+2016/04/21 15:25:18 [DEBUG] apply: aws_route53_zone.lenadronorg: executing Apply
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:18 [DEBUG] Deleting Route53 hosted zone: lenadron.org (ID: Z2FEMGQIDGB014)
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:18 [DEBUG] [aws-sdk-go] DEBUG: Request route53/DeleteHostedZone Details:
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: ---[ REQUEST POST-SIGN ]-----------------------------
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: DELETE http://route53.amazonaws.com/2013-04-01/hostedzone/Z2FEMGQIDGB014 HTTP/1.1
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: Host: route53.amazonaws.com
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: User-Agent: terraform/0.6.14 () aws-sdk-go/1.1.12 (go1.6; darwin; amd64)
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: Authorization: AWS4-HMAC-SHA256 Credential=AKIAI5KV4NDI3HADDDHA/20160421/us-east-1/route53/aws4_request, SignedHeaders=host;x-amz-date, Signature=3ff67b59054652c1ea61f6ecf98c98eae39f9b2a0a7396ab12f39d75ba6d9e8a
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: X-Amz-Content-Sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: X-Amz-Date: 20160421T222518Z
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: Accept-Encoding: gzip
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: 2016/04/21 15:25:18 [DEBUG] [aws-sdk-go] DEBUG: Response route53/DeleteHostedZone Details:
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: ---[ RESPONSE ]--------------------------------------
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: HTTP/1.1 200 OK
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: Content-Length: 260
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: Content-Type: text/xml
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: Date: Thu, 21 Apr 2016 22:25:18 GMT
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: X-Amzn-Requestid: ed9b2cc5-080f-11e6-aa45-251146c9f62b
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: 
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: <?xml version="1.0"?>
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: <DeleteHostedZoneResponse xmlns="https://route53.amazonaws.com/doc/2013-04-01/"><ChangeInfo><Id>/change/C2CECH3FHUARIF</Id><Status>PENDING</Status><SubmittedAt>2016-04-21T22:25:18.564Z</SubmittedAt></ChangeInfo></DeleteHostedZoneResponse>
+2016/04/21 15:25:18 [DEBUG] terraform-provider-aws: -----------------------------------------------------
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalWriteState
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalApplyPost
+2016/04/21 15:25:18 [TRACE] [walkDestroy] Exiting eval tree: aws_route53_zone.lenadronorg (destroy)
+2016/04/21 15:25:18 [DEBUG] vertex aws_route53_zone.lenadronorg, got dep: aws_route53_zone.lenadronorg (destroy)
+2016/04/21 15:25:18 [DEBUG] vertex root.aws_route53_zone.lenadronorg: walking
+2016/04/21 15:25:18 [DEBUG] vertex root.aws_route53_zone.lenadronorg: evaluating
+2016/04/21 15:25:18 [TRACE] [walkDestroy] Entering eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:18 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2016/04/21 15:25:18 [TRACE] [walkDestroy] Exiting eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:18 [DEBUG] vertex root.aws_route53_zone.lenadronorg: expanding/walking dynamic subgraph
+2016/04/21 15:25:18 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+aws_route53_zone.lenadronorg
+2016/04/21 15:25:18 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_zone.lenadronorg
+2016/04/21 15:25:18 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_zone.lenadronorg
+2016/04/21 15:25:18 [DEBUG] vertex root.aws_route53_zone.lenadronorg: walking
+2016/04/21 15:25:18 [DEBUG] vertex root.aws_route53_zone.lenadronorg: evaluating
+2016/04/21 15:25:18 [TRACE] [walkDestroy] Entering eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:18 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2016/04/21 15:25:18 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:18 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:18 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalReadDiff
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalIf
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalIf, err: early exit
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalSequence, err: early exit
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalOpFilter, err: early exit
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalSequence, err: early exit
+2016/04/21 15:25:18 [TRACE] [walkDestroy] Exiting eval tree: aws_route53_zone.lenadronorg
+2016/04/21 15:25:18 [DEBUG] vertex aws_route53_record.lenadron_ns, got dep: aws_route53_zone.lenadronorg
+2016/04/21 15:25:18 [DEBUG] vertex root.aws_route53_record.lenadron_ns: walking
+2016/04/21 15:25:18 [DEBUG] vertex root.aws_route53_record.lenadron_ns: evaluating
+2016/04/21 15:25:18 [TRACE] [walkDestroy] Entering eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalInterpolate
+2016/04/21 15:25:18 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalCountFixZeroOneBoundary
+2016/04/21 15:25:18 [TRACE] [walkDestroy] Exiting eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:18 [DEBUG] vertex root.aws_route53_record.lenadron_ns: expanding/walking dynamic subgraph
+2016/04/21 15:25:18 [TRACE] Graph after step *terraform.ResourceCountTransformer:
+
+aws_route53_record.lenadron_ns
+2016/04/21 15:25:18 [TRACE] Graph after step *terraform.TargetsTransformer:
+
+aws_route53_record.lenadron_ns
+2016/04/21 15:25:18 [TRACE] Graph after step *terraform.RootTransformer:
+
+aws_route53_record.lenadron_ns
+2016/04/21 15:25:18 [DEBUG] vertex root.aws_route53_record.lenadron_ns: walking
+2016/04/21 15:25:18 [DEBUG] vertex root.aws_route53_record.lenadron_ns: evaluating
+2016/04/21 15:25:18 [TRACE] [walkDestroy] Entering eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:18 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalInstanceInfo
+2016/04/21 15:25:18 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:18 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:18 [DEBUG] root: eval: terraform.EvalNoop
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalOpFilter
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalSequence
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalReadDiff
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalIf
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalIf, err: early exit
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalSequence, err: early exit
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalOpFilter, err: early exit
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalSequence, err: early exit
+2016/04/21 15:25:18 [TRACE] [walkDestroy] Exiting eval tree: aws_route53_record.lenadron_ns
+2016/04/21 15:25:18 [DEBUG] vertex provider.aws (close), got dep: aws_route53_record.lenadron_ns
+2016/04/21 15:25:18 [DEBUG] vertex root.provider.aws (close): walking
+2016/04/21 15:25:18 [DEBUG] vertex root.provider.aws (close): evaluating
+2016/04/21 15:25:18 [TRACE] [walkDestroy] Entering eval tree: provider.aws (close)
+2016/04/21 15:25:18 [DEBUG] root: eval: *terraform.EvalCloseProvider
+2016/04/21 15:25:18 [TRACE] [walkDestroy] Exiting eval tree: provider.aws (close)
+2016/04/21 15:25:18 [DEBUG] waiting for all plugin processes to complete...
+2016/04/21 15:25:18 [DEBUG] /usr/local/terraform_0_6_14/terraform-provider-aws: plugin process exited
